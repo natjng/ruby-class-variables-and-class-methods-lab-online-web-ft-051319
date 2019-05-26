@@ -34,7 +34,9 @@ class Song
   def self.genre_count
     binding.pry
     genre_count_hash = {}
-    @@genres.uniq.each {|x| hash[x] = []}
+    @@genres.uniq.each {|genre| genre_count_hash[genre] = []}
+    
+    
     genre_count_hash[@@genres.uniq]
     genre_count_arr = []
     @@genres.each do |genre|
