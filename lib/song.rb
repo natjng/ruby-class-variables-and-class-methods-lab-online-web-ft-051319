@@ -34,23 +34,23 @@ class Song
   def self.genre_count
     binding.pry
     genre_count_hash = {}
-    @@genres.uniq.each {|genre| genre_count_hash[genre] = []}
+    #@@genres.uniq.each {|genre| genre_count_hash[genre] = []}
     @@genres.each {|genre| genre_count_hash[genre] += 1}
     
-    genre_count_hash[@@genres.uniq]
-    genre_count_arr = []
-    @@genres.each do |genre|
-    genre_count_arr = @@genres.count(genre)
-    end
+    # genre_count_hash[@@genres.uniq]
+    # genre_count_arr = []
+    # @@genres.each do |genre|
+    # genre_count_arr = @@genres.count(genre)
+    # end
     
-    genre_count = {}
-    genre_arr = []
-    @@genres.each do |genre| 
-      genre_arr[genre]
-    end
-    @@genres[@genre] ||= []
-    genre_count <<
-    .count
+    # genre_count = {}
+    # genre_arr = []
+    # @@genres.each do |genre| 
+    #   genre_arr[genre]
+    # end
+    # @@genres[@genre] ||= []
+    # genre_count <<
+    # .count
   end
   
   def self.artist_count
