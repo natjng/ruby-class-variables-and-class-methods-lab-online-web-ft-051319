@@ -29,9 +29,9 @@ class Song
   end
   
   def self.genre_count
-    #binding.pry
+    binding.pry
     
-    #@@genres.count(genre)
+    @@genres.count(@genre)
     
     genre_count = {}
     genre_arr = []
