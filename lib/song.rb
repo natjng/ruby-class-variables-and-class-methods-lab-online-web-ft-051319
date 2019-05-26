@@ -32,7 +32,7 @@ class Song
     # genre_count_hash = Hash.new(0)
     # @@genres.each {|genre| genre_count_hash[genre] += 1}
     binding.pry
-    @@genres.group_by(&:itself).map{|genre,occu| [genre, v.count]}.to_h
+    @@genres.group_by(&:itself).map{|genre,occurrences| [genre, occurrences.count]}.to_h
   end
   
   def self.artist_count
