@@ -34,7 +34,6 @@ class Song
   end
   
   def self.artist_count
-    binding.pry
     @@artists.uniq.map{|artist| [artist, @@artists.count(artist)]}.to_h
   end
 end
