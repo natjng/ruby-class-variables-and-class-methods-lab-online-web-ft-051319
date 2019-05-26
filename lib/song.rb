@@ -28,6 +28,9 @@ class Song
     @@artists.uniq
   end
   
+  # Song.genre_count
+  # # => {"rap" => 5, "rock" => 1, "country" => 3}
+  
   def self.genre_count
     binding.pry
     
