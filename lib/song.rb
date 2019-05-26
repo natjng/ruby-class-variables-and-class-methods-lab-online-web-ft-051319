@@ -35,7 +35,7 @@ class Song
     binding.pry
     genre_count_hash = {}
     @@genres.uniq.each {|genre| genre_count_hash[genre] = []}
-    @@genres.each {|genre| }
+    @@genres.each {|genre| genre_count_hash[genre]}
     
     genre_count_hash[@@genres.uniq]
     genre_count_arr = []
