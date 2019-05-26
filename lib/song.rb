@@ -34,6 +34,7 @@ class Song
   end
   
   def self.artist_count
-    
+    binging.pry
+    things.uniq.map{|t| [t,things.count(t)]}.to_h
   end
 end
