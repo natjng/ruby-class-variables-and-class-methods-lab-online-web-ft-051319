@@ -36,14 +36,14 @@ class Song
     
     @@genres.count(@genre)
     
-    genre_count = {}
-    genre_arr = []
-    @@genres.each do |genre| 
-      genre_arr[genre]
-    end
-    @@genres[@genre] ||= []
-    genre_count <<
-    .count
+    # genre_count = {}
+    # genre_arr = []
+    # @@genres.each do |genre| 
+    #   genre_arr[genre]
+    # end
+    # @@genres[@genre] ||= []
+    # genre_count <<
+    # .count
   end
   
   def self.artist_count
